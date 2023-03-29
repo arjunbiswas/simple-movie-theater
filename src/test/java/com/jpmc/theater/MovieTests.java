@@ -27,9 +27,8 @@ public class MovieTests {
     @Test
     void specialMovieWith11AMto4PMDiscount() {
         Movie spiderMan = new Movie("Spider-Man: No Way Home", Duration.ofMinutes(90),12.5, 1);
-        LocalDateTime three = LocalDateTime.of(LocalDateTime.now().getYear(), LocalDateTime.now().getMonth(), LocalDateTime.now().getDayOfMonth(), 15, 00);
         LocalDateTime seventhDay = LocalDateTime.of(2023, Month.MARCH, 8, 11, 30, 40);
-        Showing showing = new Showing(spiderMan, 5, three);
+        Showing showing = new Showing(spiderMan, 5, seventhDay);
         assertEquals(9.375, spiderMan.calculateTicketPrice(showing));
     }
 
