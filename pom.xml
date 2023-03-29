@@ -30,31 +30,6 @@
 	</properties>
 
 	<dependencies>
-		<!--  Gson: Java to Json conversion -->
-		<!-- https://mvnrepository.com/artifact/org.json/json -->
-		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.13.5</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.10.1</version>
-			<scope>compile</scope>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.json/json -->
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20230227</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fatboyindustrial.gson-javatime-serialisers</groupId>
-			<artifactId>gson-javatime-serialisers</artifactId>
-			<version>1.1.2</version>
-		</dependency>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>

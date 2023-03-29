@@ -6,7 +6,6 @@ import com.jpmc.theater.discounts.SeventhDayDiscount;
 import com.jpmc.theater.discounts.SpecialMovieCodeDiscount;
 import com.jpmc.theater.util.Util;
 
-import javax.sound.midi.Sequence;
 import java.time.Duration;
 import java.util.Objects;
 

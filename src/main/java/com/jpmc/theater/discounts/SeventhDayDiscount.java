@@ -1,6 +1,5 @@
 package com.jpmc.theater.discounts;
 
-import com.jpmc.theater.LocalDateProvider;
 import com.jpmc.theater.Showing;
 
 public class SeventhDayDiscount implements Discount {

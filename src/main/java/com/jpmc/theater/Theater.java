@@ -52,8 +52,7 @@ public class Theater {
         try {
             showing = schedule.get(sequence - 1);
         } catch (RuntimeException ex) {
-            ex.printStackTrace();
-            throw new IllegalStateException("not able to find any showing for given sequence " + sequence);
+            throw new IllegalStateException("not able to find any showing for given sequence " + sequence, ex);
         }
         return new Reservation(customer, showing, howManyTickets);
     }
