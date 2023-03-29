@@ -45,12 +45,20 @@ public class Customer {
         if (this == o) return true;
         if (!(o instanceof Customer)) return false;
         Customer customer = (Customer) o;
-        return Objects.equals(name, customer.name) && Objects.equals(id, customer.id);
+        if (this.id != "") {
+            return Objects.equals(name, customer.name) && Objects.equals(id, customer.id);
+        } else {
+            return Objects.equals(name, customer.name);
+        }
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, id);
+        if (this.id != "") {
+            return Objects.hash(name, id);
+        } else {
+            return Objects.hash(name);
+        }
     }
 
     @Override
